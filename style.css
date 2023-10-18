@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    font-family: Monserrat, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Intro */
+.intro {
+    width: 100%;
+    height: 100vh;
+
+    background: url("min.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Nav */
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background-color: #6495ED;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover {
+    color: #6495ED;
+}
+.nav_link:hover:after {
+    opacity: 1;
+}
+
+/* Section */
+.section {
+    padding: 80px 0;
+}
+
+.section_header {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section_subtitle {
+    font-size: 18px;
+    color: #505050;
+}
+
+.section_title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+.section_title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 20px auto 40px;
+
+    background-color: #1E2460;
+}
+
+.section_text {
+    font-size: 15px;
+    color: #505050;
+}
+
+/* About */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px -15px 0;
+}
+
+.about_item {
+    width: 33.3333333%;
+    padding: 0 15px;
+}
+
+.about_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Players */
+.player {
+    display: flex;
+
+}
+
+.player_item {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 15px 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.img {
+    border-radius: 15%;
+    width: 70%;
+}
+
+/* Стилі для розділів */
+section {
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+//height: 100vh;
+}
+
+/* Audio */
+.audio {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.video {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+
+
+/* Стилі для таблиці результатів */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 75%;
+    margin-top: 16px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #1E2460;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 1230px) {
+
+}
+
+@media (max-width: 900px) {
+    .header_logo {
+        font-size: 20px;
+    }
+
+    .video {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .section_title {
+        font-size: 24px;
+    }
+
+    .section_header {
+        margin: 0 auto 15px;
+    }
+
+    .about_item {
+        width: 100%;
+    }
+
+    .about {
+        margin: 20px -15px 0;
+    }
+
+    .video {
+        width: 100%;
+        margin: 20px -15px 0;
+    }
+
+    .player {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
